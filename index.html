@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*css reset*/
+		* {
+			box-sizing: 12px;
+		}
+		body,h1,h2,h3,h4,h5,h6 {
+			margin: 0;
+			padding: 0;
+		}
+		img {
+			width: 100%;
+			vertical-align: inherit;
+			border: 0;
+		}
+		/*修復浮動*/
+		.clearfix::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		/*滿版*/
+		.full-width {
+			width: 100%;
+		}
+		/*固定寬度*/
+		.fixed-width {
+			width: 1200px;
+			margin: auto;
+		}
+		/*3欄*/
+		.col-3 {
+			float: left;
+			width: 380px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		/*4欄*/
+		.col-4 {
+			float: left;
+			width: 280px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		/*固定定位*/
+		nav {
+/*			overflow: auto;*/
+			position: fixed;
+		}
+		nav .logo {
+			float: left;
+			width: 100px;
+			height: 100px;
+			background-color:#738e9a;
+		}
+		nav .menu {
+			float: right;
+		}
+		nav .menu ul {
+			margin: 0;
+			padding: 0;
+		}
+		nav .menu li {
+			float: left;
+			list-style-type: none;
+		}
+		nav .menu a {
+			display: block;
+			padding-left: 15px;
+			padding-right: 15px;
+			height: 100px;
+			line-height: 100;
+			color: aquamarine;
+			font-size: 14px;
+			text-decoration: none;
+		}
+		header {
+			
+		}
+	</style>
+</head>
+<body>
+<nav class="full-width clearfix">
+	<div class="fixed-width">
+		<div class="logo"></div>
+		<div class="menu">
+		<ul>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Products</a></li>
+			<li><a href="">Journal</a></li>
+			<li><a href="">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<header class="full-width">
+	<div class="content">
+		<h1>hello world!</h1>
+		<p>Life is about create yuorself not boring.</p>
+	</div>
+		
+	</header>
+</body>
+</html>
